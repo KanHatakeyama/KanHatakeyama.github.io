@@ -45,10 +45,6 @@
     <h3>リチウムイオン伝導性を示す高分子・有機電解液の探索: J. Am. Chem. Soc. 2020</h3>
     AI-Assisted Exploration of Superionic Glass-Type Li+ Conductors with Aromatic Structures
     <br>
-    機械学習の手法を元に、新規高分子イオン伝導体を探索します。分子認識にはGraph neural net、物性予測にはGaussian processを使いました。
-    <br>
-    仮想の化合物データベースでNeural netを事前学習すると、分子認識の精度が若干上がることが分かりました。
-    <br>
     <a href="https://pubs.acs.org/doi/abs/10.1021/jacs.9b11442">論文はこちら</a>
     <br>
     <a href="http://www.appchem.waseda.ac.jp/~polymer/PolymerDatabase/">データはこちら</a>
@@ -61,8 +57,7 @@
     <h3>電荷移動錯体系の電解質の解析: ACS Appl. Electron. Mater. 2020</h3>
     Charge-Transfer Complexes for Solid-State Li+ Conduction
     <br>
-    データ解析の中で、初歩的な因果推論を試みました。
-    <br>
+
     <a href="https://pubs.acs.org/doi/10.1021/acsaelm.0c00393">論文はこちら</a>
     <br>
     <a href="https://github.com/KanHatakeyama/CT_complex_ionic_conductor">データはこちら</a>
@@ -76,41 +71,10 @@
     <a href="https://www.nature.com/articles/s43246-020-00052-8">論文はこちら</a>
     <br>
     <a href="https://github.com/KanHatakeyama/Integrating-multiple-materials-science-projects">データはこちら</a>
-    <br>
-    <br>
-    [材料研究者・一般向け解説]
-    <br>
-    いわゆるAI(機械学習モデル)は現状、万能ではありません。多彩な材料やプロセスのビッグデータを読み取り、AIに学習させることが一つの目標ですが、道半ばです。
-    <br>
-    本研究では最近の機械学習のテクニックを使い、"形式的には"、上記の作業がある程度出来るようになりました。一方、学習精度の向上やデータの自動収集等、課題は未だ多く残っています。
-    <br>
-    <a href="https://www.waseda.jp/top/news/69781">プレスリリースはこちら</a>
-    <br>
-    <br>
-    
-    
-    <br>
-    [AI研究者向け解説]
-    <br>
-    所謂Masked language modelingに近い作業をグラフ構造で実装しています。材料情報を記述するグラフ構造中の各ノード(単語、化合物)に対する分散表現を別々のアルゴリズムで埋め込み、グラフニューラルネットワークで学習するイメージです。
-    <br>
-    <ul>
-    <li>単語やフレーズに対する分散表現はBERTを使いました</li>
-    <li>一方、通常の自然言語処理モデルで"化合物に対する適切な分散表現"を得るのは困難です(やっている例もありますが。10.1038/s41586-019-1335-8)。学習データが著しく少ない為です。例えば、新規化合物に対する学習データは皆無です。</li>
-    <li>そこで、Fingerprintと呼ばれる、分子構造を数値化する為の(ケモインフォマティクス分野では有名な)アルゴリズムを使い、分子構造に対する分散表現を生成しました</li>
-    <li>学習データ数の制約上、"表記揺れ"は出来るだけ避ける必要があります。そこで、そこそこの表記自由度があり、ユーザーも扱いやすいグラフ構造を入力データに使いました</li>
-    <li>深層学習には既存のGated graph neural networkを使っています。"AIの研究"という視点では、既存のモジュールを組み合わせただけ、とも言えるかもしれません</li>
-    <li>一方、材料科学の領域では"如何にして材料情報を学習モデルに認識させるか”(≒材料情報を数値化するアルゴリズムの開発)が一つの大きな課題になっています。</li>
-    <li>本研究は課題問題の解決の為の一つのアイデアを提示したもの、と位置づけています</li>
-    </ul>
-    <br>
+ 
     <hr>
     <h3>量子アニーリング関連技術※を利用した化合物・組成物探索: arXiv 2020</h3>
     Tackling the challenge of a huge materials science search space with quantum-inspired annealing
-    <br>
-    超並列計算による化合物・組成物の探索を試みました。
-    <br>
-    (※富士通デジタルアニーラを利用)
     <br>
     <a href="http://arxiv.org/abs/2008.03023">論文はこちら</a>
     <br>
@@ -120,10 +84,7 @@
     <br>
     <br>
 
-   <hr>
-    <h3>その他 メモ</h3>
-    <a href="files/20201017_2_error_calc.pdf">平均値の計算と有効数字 (学部講義)</a>
-    
+
 
   </body>
 </html>
