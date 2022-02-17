@@ -1,7 +1,0 @@
-.. toctree::
-   :maxdepth: 3
-   :caption: Contents:
-   :numbered:
-
-   1
-   2

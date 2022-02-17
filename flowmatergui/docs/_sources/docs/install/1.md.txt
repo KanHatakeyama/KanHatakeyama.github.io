@@ -1,3 +1,0 @@
-# Installization
-## Setup Environment
-- Visit Github 
