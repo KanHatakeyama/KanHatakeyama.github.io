@@ -103,7 +103,9 @@
 ### View converted data
 - The converted table can be edited by "D-TALE" module
     - https://github.com/man-group/dtale
-- [TBD Table image]
+
+![](figs/dtale_table.PNG)
+
 
 ### Inputting many variables in a single experiment
 - Split multiple variables with comma (,) to express multiple experiments
